@@ -195,7 +195,7 @@
 }
 
 .project-thumbnail-list__information-title {
-  @include text-overflow;
+  @include ellipsis;
   @include font-size("15");
   position: relative;
   padding: $spacing-2xs 0;
@@ -215,7 +215,7 @@
   color: $text-03;
 
   &:first-child {
-    @include text-overflow;
+    @include ellipsis;
     max-width: fit-content;
   }
 

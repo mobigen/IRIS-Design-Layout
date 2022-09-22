@@ -11,7 +11,7 @@
 }
 
 .side-panel__component-name {
-  @include text-overflow;
+  @include ellipsis;
   @include line-height("title");
   @include font-size("13");
   color: $text-03;
@@ -163,7 +163,7 @@
 }
 
 .side-panel-content__head-title {
-  @include text-overflow;
+  @include ellipsis;
   @include font-weight("medium");
   @include line-height("heading");
   flex-grow: 1;
