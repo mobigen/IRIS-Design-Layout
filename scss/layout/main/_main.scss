@@ -152,7 +152,7 @@
 }
 
 .index-layout-body__filter-title {
-  @include ellipsis;
+  @include text-overflow;
   @include font-weight("regular");
   @include font-size("15");
   color: $text-02;

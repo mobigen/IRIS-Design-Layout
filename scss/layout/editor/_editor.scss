@@ -45,7 +45,7 @@
 }
 
 .editor-layout-head__title-text {
-  @include ellipsis;
+  @include text-overflow;
   @include font-weight("medium");
 }
 
