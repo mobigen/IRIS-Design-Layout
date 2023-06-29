@@ -99,6 +99,13 @@
   }
 }
 
+//GS인증 - 빈 버튼일 경우 셀렉박스 스타일
+.select--empty {
+  .select-selector__title {
+    color: $text-05;
+  }
+}
+
 .select--disabled {
   .select-selector__button {
     border-color: $hover-row !important;
@@ -120,6 +127,7 @@
 
   .select-selector__title {
     color: $text-05;
+    opacity: 0.5;
   }
 
   .select-selector__icon {
