@@ -77,6 +77,10 @@
     justify-content: flex-start;
     align-items: center;
     color: $text-02;
+
+    em {
+      @include font-weight("medium");
+    }
   }
 }
 
