@@ -72,11 +72,18 @@
   background-color: $ui-01;
 
   &__title {
+    @include text-overflow;
+    @include font-weight("regular");
     @include font-size("15");
     display: flex;
     justify-content: flex-start;
     align-items: center;
     color: $text-02;
+    letter-spacing: rem(-0.3px);
+
+    em {
+      @include font-weight("medium");
+    }
   }
 }
 
@@ -165,6 +172,7 @@
   @include font-size("15");
   color: $text-02;
   letter-spacing: rem(-0.3px);
+
   em {
     @include font-weight("medium");
   }
