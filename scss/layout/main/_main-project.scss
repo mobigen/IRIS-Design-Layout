@@ -215,6 +215,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  
+  & + & {
+    margin-top: $spacing-sm;
+  }
 }
 
 .project-thumbnail-list__information-desc-text {
@@ -239,6 +243,10 @@
   &.project-thumbnail-list__information-desc-text--right {
     margin-left: auto;
     max-width: 100% !important;
+  }
+
+  em {
+    @include font-weight('medium');
   }
 }
 
