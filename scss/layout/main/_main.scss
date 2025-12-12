@@ -82,6 +82,12 @@
       @include font-weight("medium");
     }
   }
+
+  &:has(+ .index-layout-footer) {
+    .project-list {
+      height: calc(100vh - 184px);
+    }
+  }
 }
 
 .index-layout-body__template-inner {
@@ -239,4 +245,18 @@
 
 .index-layout-body__controller-refresh-button {
   margin-left: $spacing-xs;
+}
+
+.index-layout-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-md;
+
+  &__main-buttons {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+    margin-left: auto;
+  }
 }
